@@ -1,0 +1,49 @@
+.navbar{
+    height: 50px;
+    border-bottom: 0.5px solid white;
+    display: flex;
+    align-items: center;
+    font-size: 14px;
+    color: #555;
+    
+    .background{
+        width: 100%;
+        padding: 20px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        background-color: rgb(205, 11, 244);
+        .search{
+            display: flex;
+            align-items: center;
+            border: 0.5px solid white;
+            padding: 3px;
+        }
+        .item{
+            display: flex;
+            align-items: center;
+            margin-right: 20px;
+            position: relative;
+        }
+
+        .avatar{
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+        }
+        .counter{
+            width: 15px;
+            height: 15px;
+            background-color: red;
+            color: white;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            position: absolute;
+            font-size: 10px;
+            top: -5px;
+            right: -5px;
+        }
+    }
+}
