@@ -1,49 +1,72 @@
-.navbar{
+.navbar {
     height: 50px;
-    border-bottom: 0.5px solid white;
+    border-bottom: 0.5px solid rgb(231, 228, 228);
     display: flex;
     align-items: center;
     font-size: 14px;
     color: #555;
-    
-    .background{
+    background-color: rgb(146, 26, 243);
+
+    .background {
         width: 100%;
         padding: 20px;
         display: flex;
         align-items: center;
         justify-content: space-between;
-        background-color: rgb(205, 11, 244);
-        .search{
+
+        .search {
             display: flex;
             align-items: center;
-            border: 0.5px solid white;
+            border: 0.5px solid lightgray;
             padding: 3px;
-        }
-        .item{
-            display: flex;
-            align-items: center;
-            margin-right: 20px;
-            position: relative;
+
+            input {
+                border: none;
+                outline: none;
+                background: transparent;
+
+                &::placeholder {
+                    font-size: 12px;
+                }
+            }
         }
 
-        .avatar{
-            width: 40px;
-            height: 40px;
-            border-radius: 50%;
-        }
-        .counter{
-            width: 15px;
-            height: 15px;
-            background-color: red;
-            color: white;
-            border-radius: 50%;
+        .items {
             display: flex;
             align-items: center;
-            justify-content: center;
-            position: absolute;
-            font-size: 10px;
-            top: -5px;
-            right: -5px;
+
+            .item {
+                display: flex;
+                align-items: center;
+                margin-right: 20px;
+                position: relative;
+
+                .icon {
+                    font-size: 20px;
+                }
+
+                .avatar {
+                    width: 30px;
+                    height: 30px;
+                    border-radius: 50%;
+                }
+
+                .counter {
+                    width: 15px;
+                    height: 15px;
+                    background-color: red;
+                    border-radius: 50%;
+                    color: white;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    font-size: 10px;
+                    font-weight: bold;
+                    position: absolute;
+                    top: -5px;
+                    right: -5px;
+                }
+            }
         }
     }
 }

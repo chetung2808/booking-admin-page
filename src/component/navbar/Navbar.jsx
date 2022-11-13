@@ -15,7 +15,7 @@ const Navbar = () => {
           <input type="text" placeholder="Tìm kiếm ..." />
           <SearchIcon className="icon"/>
         </div>
-        <div className="item">
+        <div className="items">
           <div className="item">
             <LanguageIcon className="icon"/>
             Tiếng Việt
