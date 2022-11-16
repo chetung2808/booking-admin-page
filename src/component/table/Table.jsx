@@ -16,7 +16,8 @@ const List = () => {
       hotel: "Sunny House Da Lat",
       location: "Đà Lạt",
       date: "01-11-2022",
-      status: "Đã thanh toán"
+      start: "20-12-2022",
+      end: "26-12-2022",
       
     },
     {
@@ -26,7 +27,8 @@ const List = () => {
       hotel: "Crystal Boutique Hotel",
       location: "Đà Nẵng",
       date: "25-10-2022",
-      status: "Đã thanh toán"
+      start: "26-12-2022",
+      end: "03-01-2023",
     },
     {
       username: "ad_NQTuan",
@@ -35,7 +37,8 @@ const List = () => {
       hotel: "Moc Hotel Sapa",
       location: "Lào Cai",
       date: "15-11-2022",
-      status: "Chưa thanh toán"
+      start: "23-12-2022",
+      end: "03-01-2023",
     },
 
   ];
@@ -50,8 +53,9 @@ const List = () => {
             <TableCell className="tableCell">Email</TableCell>
             <TableCell className="tableCell">Khách sạn</TableCell>
             <TableCell className="tableCell">Địa điểm</TableCell>
-            <TableCell className="tableCell">Ngày giao dịch</TableCell>
-            <TableCell className="tableCell">Tình trạng</TableCell>
+            <TableCell className="tableCell">Ngày đặt</TableCell>
+            <TableCell className="tableCell">Ngày nhận phòng</TableCell>
+            <TableCell className="tableCell">Ngày trả phòng</TableCell>
           </TableRow>
         </TableHead>
         <TableBody>
@@ -63,7 +67,8 @@ const List = () => {
               <TableCell className="tableCell">{row.hotel}</TableCell>
               <TableCell className="tableCell">{row.location}</TableCell>
               <TableCell className="tableCell">{row.date}</TableCell>
-              <TableCell className="tableCell">{row.status}</TableCell>
+              <TableCell className="tableCell">{row.start}</TableCell>
+              <TableCell className="tableCell">{row.end}</TableCell>
             </TableRow>
           ))}
         </TableBody>
