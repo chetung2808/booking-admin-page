@@ -9,28 +9,36 @@ import NotificationsActiveIcon from '@mui/icons-material/NotificationsActive';
 import SettingsIcon from '@mui/icons-material/Settings';
 import AccountCircleIcon from '@mui/icons-material/AccountCircle';
 import ExitToAppIcon from '@mui/icons-material/ExitToApp';
+import { Link } from 'react-router-dom';
 
 const Sidebar = () => {
   return (
     <div className="sidebar">
       <div className="top">
-        <div className="logo">Travel</div>
+        <div className="logo">Tour & Travel</div>
       </div>
       <div className="center">
         <ul>
             <p className="title"> Main</p>
             <li>
+                <Link to="/" > 
                 <DashboardIcon/>
-                <span>Bảng điều khiển</span>
+                <span url="">Bảng điều khiển</span>
+                </Link>
             </li>
             <p className="title"> Danh sách</p>
             <li>
+                <Link to="/users" > 
                 <AccountBoxIcon/>
+               
                 <span>Khách hàng</span>
+                </Link>
             </li>
             <li>
+            <Link to="/users" > 
                 <HotelIcon/>
                 <span>Khách sạn</span>
+                </Link>
             </li>
             <li>
                 <CreditCardIcon/>
