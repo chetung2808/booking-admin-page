@@ -8,8 +8,8 @@ const Datatable = () => {
       field: "action", headerName: "Action", width: 200, renderCell:()=>{
         return (
           <div className="cellAction">
-            <div className="viewButton">View</div>
-            <div className="deleteButton">Delete</div>
+            <div className="viewButton">Xem</div>
+            <div className="deleteButton">Xóa</div>
           </div>
         );
       },
