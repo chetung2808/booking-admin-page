@@ -1,0 +1,75 @@
+.App-header {
+  background-image: linear-gradient(-90deg, #1AA37A, #9DFFB3);
+  position: fixed;
+  width: 100%;
+  z-index: 100;
+}
+.color_hover_btn_outline_info {
+  border-radius: 5rem;
+  background:black;
+  color: aliceblue;
+}
+.color_hover_btn_outline_info:hover {
+  background-color: #1aa37a;
+}
+.logo_team {
+  margin-right: 15rem;
+  font-weight: bold;
+}
+
+.button-navbar {
+  border-radius: 5rem;
+}
+.btn_sign {
+  margin-left: 10px;
+  border-radius: 5rem;
+}
+.btn_select_list {
+  background-color: transparent;
+}
+.contener img {
+  position: absolute;
+  width: 100%;
+  height: 28rem;
+  object-fit: cover;
+}
+.contener {
+  position: relative;
+  padding-top: 6.9rem;
+}
+.info_select {
+  position: absolute;
+  font-size: 2rem;
+  color: aliceblue;
+  margin-left: 25%;
+  margin-top: 5%;
+  height: 20px;
+  width: 25%;
+  z-index: 16;
+}
+.text_3 {
+  font-size: 21px;
+}
+.text_2 {
+  font-weight: bold;
+  font-size: 40px;
+}
+.buton_text {
+  background-image: linear-gradient(-90deg, #9EF9D8, #CAF6BF);
+  color: black;
+  border-color: transparent;
+  border-radius: 5rem;
+}
+.buton_text:hover {
+  background-color: #1aa37a;
+  border-color: transparent;
+}
+.image-slide{
+  display: contents;
+}
+/* .button-left-right{
+  padding-top: 13rem;
+} */
+.location-select-image{
+  padding-top: 26rem;
+}

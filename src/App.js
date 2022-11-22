@@ -9,8 +9,11 @@ import Login from './page/login/Login';
 import List from './page/list/List';
 import New from './page/new/New';
 import Single from './page/single/Single';
+import { useContext } from 'react';
+
 
 function App() {
+
   return (
     <div className="App">
       <Router>
