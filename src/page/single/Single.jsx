@@ -6,6 +6,7 @@ import List from '../../component/table/Table';
 
 
 const Single = () => {
+  const { data, loading, error } = useFetch(`api/users/${_id}`);
   return (
     <div className="single">
       <Sidebar />

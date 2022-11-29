@@ -35,7 +35,7 @@ const Sidebar = () => {
                 </Link>
             </li>
             <li>
-            <Link to="/users" > 
+            <Link to="/hotel" > 
                 <HotelIcon/>
                 <span>Khách sạn</span>
                 </Link>
@@ -63,10 +63,13 @@ const Sidebar = () => {
             </li>
             <p className="title"> Người dùng</p>
             <li>
+                <Link to="/users/test" > 
                 <AccountCircleIcon/>
                 <span>Thông tin cá nhân</span>
+                </Link>
             </li>
             <li>
+            
                 <ExitToAppIcon/>
                 <span>Đăng xuất</span>
             </li>

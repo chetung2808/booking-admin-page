@@ -3,16 +3,30 @@ import Home from './page/home/Home';
 import {
   BrowserRouter as Router,
   Routes,
-  Route
+  Route,
+  Navigate
 } from "react-router-dom";  
 import Login from './page/login/Login';
 import List from './page/list/List';
 import New from './page/new/New';
 import Single from './page/single/Single';
 import { useContext } from 'react';
+import { AuthContext } from './context/AuthContext';
 
 
 function App() {
+
+ 
+
+  const ProtectedRoute = ({ children }) => {
+    const { user } = useContext(AuthContext);
+
+    if (!user) {
+      return <Navigate to="/login" />;
+    }
+
+    return children;
+  };
 
   return (
     <div className="App">
