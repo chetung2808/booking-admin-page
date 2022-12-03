@@ -35,7 +35,7 @@ const Sidebar = () => {
                 </Link>
             </li>
             <li>
-            <Link to="/hotel" > 
+            <Link to="/hotels" > 
                 <HotelIcon/>
                 <span>Khách sạn</span>
                 </Link>

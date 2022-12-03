@@ -2,7 +2,7 @@ export const userColumns = [
     { field: "_id", headerName: "ID", width: 70 },
     {
       field: "user",
-      headerName: "User",
+      headerName: "Tên người dùng",
       width: 230,
       renderCell: (params) => {
         return (
@@ -21,17 +21,22 @@ export const userColumns = [
   
     {
       field: "country",
-      headerName: "Country",
+      headerName: "Quốc tịch",
       width: 100,
     },
     {
       field: "city",
-      headerName: "City",
+      headerName: "Thành phố",
       width: 100,
     },
     {
       field: "phone",
-      headerName: "Phone",
+      headerName: "Số điện thoại",
+      width: 100,
+    },
+    {
+      field: "isAdmin",
+      headerName: "Quản trị viên",
       width: 100,
     },
   ];

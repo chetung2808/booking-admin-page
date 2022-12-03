@@ -3,10 +3,11 @@ import Sidebar from '../../component/sidebar/Sidebar'
 import Navbar from '../../component/navbar/Navbar'
 import Chart from '../../component/chart/Chart';
 import List from '../../component/table/Table';
+import useFetch from "../../hook/useFetch";
 
 
-const Single = () => {
-  const { data, loading, error } = useFetch(`api/users/${_id}`);
+const Single = (id) => {
+  const { data, loading, error } = useFetch(`api/users/${id}`);
   return (
     <div className="single">
       <Sidebar />
@@ -23,7 +24,7 @@ const Single = () => {
                 className="itemImg"
               />
               <div className="details">
-                <h1 className="itemTitle">Chế Nguyễn Minh Tùng</h1>
+                <h1 className="itemTitle">{data}</h1>
                 <div className="detailItem">
                   <span className="itemKey">Email:</span>
                   <span className="itemValue">19522490@ms.uit.edu</span>
